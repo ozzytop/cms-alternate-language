@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @var \Ozzytop\Cms\Block\Cms $block
+ */
+
+$pageId = $block->getPageId();
+
+$pagesStore = $block->getPages($pageId);
+
+foreach ($pagesStore as $page) {
+    echo "<link rel='alternate' hreflang='" . $page['language'] . "' href='" . $page['url'] . "' />";
+}
