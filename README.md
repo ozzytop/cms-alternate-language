@@ -22,7 +22,7 @@ Edit `composer.json`
         }
     ],
     "require": {
-        "https://github.com/ozzytop/cms-alternate-language": "master"
+        "ozzytop/cms-alternate-language": "master"
     }
 }
 ```
@@ -50,6 +50,12 @@ In the Admin Dashboard go to `Content -> Pages`
 
 Then Select the page that you want to enable this feature. Inside the edit page, go to `Page in Websites` section and
 select those store views that you want to show the alternate link.
+
+### 4. Important to know
+
+It's important to know that some configuration has to be added in order to make this work:
+* Base Url -> `Stores -> Configuration`, Select the corresponding Store View, then `General -> Web -> Base URLs -> Base URL`
+* Language -> `Stores -> Configuration`, Select the corresponding Store View, then `General -> General -> Locale Options -> Locale`
 
 ## How does it work?
 
